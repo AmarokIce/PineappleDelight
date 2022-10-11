@@ -1,0 +1,19 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="AFL-3.0"
+[[mods]]
+modId="pineapple_delight"
+version="${file.jarVersion}"
+displayName="Example Mod"
+logoFile="assets/pineapple_delight/textures/pineapple_delight.png"
+credits="Someoneice"
+authors="Someoneice"
+description='''
+Add Pineapple to Minecraft!
+'''
+[[dependencies.pineapple_delight]]
+    modId="farmersdelight"
+    mandatory=true
+    versionRange="[*,)"
+    ordering="NONE"
+    side="BOTH"
