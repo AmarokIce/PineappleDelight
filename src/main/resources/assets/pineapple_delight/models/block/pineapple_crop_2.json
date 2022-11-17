@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "pineapple_delight:block/pineapple_crop_2"
+  }
+}
