@@ -20,9 +20,4 @@ public class ItemList {
     public static final RegistryObject<Item> PINEAPPLE_FRIED_RICE = ITEMS.register("pineapple_fried_rice", () -> ItemUtil.foodItems(12, 0.4f, false, false, false));
     public static final RegistryObject<Item> PINEAPPLE_MILK_SHAKE = ITEMS.register("pineapple_milk_shake", () -> ItemUtil.foodDrinkItems(5, 0.5f, false, false));
     public static final RegistryObject<Item> PINEAPPLE_ICE_CREAM = ITEMS.register("pineapple_ice_cream", () -> ItemUtil.foodDrinkItems(5, 0.5f, false, false));
-
-    public static final RegistryObject<Item> PINEAPPLE_PIE = ITEMS.register("pineapple_pie", () -> new BlockItem(BlockList.PINEAPPLE_PIE.get(), new Item.Properties().tab(ItemsGroup.TAB)));
-    public static final RegistryObject<Item> PINEAPPLE_WILD_CROP = ITEMS.register("pineapple_wild_crop", () -> new BlockItem(BlockList.PINEAPPLE_WILD_CROP.get(), new Item.Properties().tab(ItemsGroup.TAB)));
-    public static final RegistryObject<Item> PINEAPPLE_CROP = ITEMS.register("pineapple_crop", () -> new BlockItem(BlockList.PINEAPPLE_CROP.get(), new Item.Properties().tab(ItemsGroup.TAB)));
-
 }
