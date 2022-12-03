@@ -1,6 +1,6 @@
 ![](src/main/resources/assets/pineapple_delight/textures/pineapple_delight.png)
 ## **Pineapple Delight**
-<a href="https://www.curseforge.com/minecraft/mc-mods/farmers-delight">
+<a href="https://www.curseforge.com/minecraft/mc-mods/pineapple-delight">
   <img src="http://cf.way2muchnoise.eu/full_398521_downloads.svg" alt="Curseforge Downloads">
 </a>
 
