@@ -33,7 +33,7 @@ public class WildPineapple {
 
     private static ConfiguredFeature<?, ?> wildCropFeature(Supplier<Block> wildCrop, TagKey<Block> blockTag) {
         return new ConfiguredFeature<>(Feature.RANDOM_PATCH, WildCropGeneration.randomPatchConfig(wildCrop.get(),
-                64, 12, BlockPredicate.matchesTag(blockTag, new BlockPos(0, -1, 0))));
+                64, 12, BlockPredicate.matchesTag(new BlockPos(0, -1, 0), blockTag)));
     }
     private static PlacedFeature wildCropPatch(RegistryObject<ConfiguredFeature<?, ?>> feature, PlacementModifier... modifiers) {
         return new PlacedFeature(feature.getHolder().get(), Lists.newArrayList(modifiers));

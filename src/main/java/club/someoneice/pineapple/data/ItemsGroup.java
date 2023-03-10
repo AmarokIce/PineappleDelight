@@ -1,4 +1,4 @@
-package club.someoneice.pineapple.init.data;
+package club.someoneice.pineapple.data;
 
 import club.someoneice.pineapple.init.ItemList;
 import net.minecraft.world.item.CreativeModeTab;

@@ -1,4 +1,4 @@
-package club.someoneice.pineapple.init.data;
+package club.someoneice.pineapple.data;
 
 import club.someoneice.pineapple.common.DrinkItems;
 import net.minecraft.world.food.FoodProperties;

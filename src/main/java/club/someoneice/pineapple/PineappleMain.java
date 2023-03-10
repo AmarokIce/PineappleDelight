@@ -1,15 +1,19 @@
 package club.someoneice.pineapple;
 
+import club.someoneice.pineapple.event.VanillaEvent;
 import club.someoneice.pineapple.gem.WildPineapple;
 import club.someoneice.pineapple.gem.WorldEvent;
 import club.someoneice.pineapple.init.BlockList;
 import club.someoneice.pineapple.init.ItemList;
-import club.someoneice.pineapple.init.data.ItemsGroup;
+import club.someoneice.pineapple.data.ItemsGroup;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -33,7 +37,8 @@ public class PineappleMain
         WildPineapple.FEATURES.register(modEventBus);
         WildPineapple.PATCHES.register(modEventBus);
 
-        MinecraftForge.EVENT_BUS.register(new WorldEvent());
+        // MinecraftForge.EVENT_BUS.register(new WorldEvent());
+        MinecraftForge.EVENT_BUS.register(new VanillaEvent());
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -41,4 +46,12 @@ public class PineappleMain
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) { }
+
+    @SubscribeEvent
+    public static void onRenderTypeSetup(FMLClientSetupEvent event) {
+        event.enqueueWork(() -> {
+            ItemBlockRenderTypes.setRenderLayer(BlockList.PINEAPPLE_WILD_CROP.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(BlockList.PINEAPPLE_CROP.get(), RenderType.cutout());
+        });
+    }
 }

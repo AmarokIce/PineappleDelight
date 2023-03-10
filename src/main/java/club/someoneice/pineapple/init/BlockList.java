@@ -1,7 +1,7 @@
 package club.someoneice.pineapple.init;
 
-import club.someoneice.pineapple.init.data.BlockUtil;
-import club.someoneice.pineapple.init.data.ItemsGroup;
+import club.someoneice.pineapple.data.BlockUtil;
+import club.someoneice.pineapple.data.ItemsGroup;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
