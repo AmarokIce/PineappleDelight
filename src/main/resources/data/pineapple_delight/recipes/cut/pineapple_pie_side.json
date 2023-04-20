@@ -1,0 +1,18 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "pineapple_delight:pineapple_pie"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool",
+    "tag": "fabric:tools/knives"
+  },
+  "result": [
+    {
+      "item": "pineapple_delight:pineapple_pie_side",
+      "count": 4
+    }
+  ]
+}
