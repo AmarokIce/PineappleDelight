@@ -2,7 +2,6 @@ package club.someoneice.pineapple;
 
 import club.someoneice.pineapple.event.VanillaEvent;
 import club.someoneice.pineapple.gem.WildPineapple;
-import club.someoneice.pineapple.gem.WorldEvent;
 import club.someoneice.pineapple.init.BlockList;
 import club.someoneice.pineapple.init.ItemList;
 import club.someoneice.pineapple.data.ItemsGroup;

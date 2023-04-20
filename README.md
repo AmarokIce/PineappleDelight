@@ -10,6 +10,6 @@ Welcome! Yep! It's another extension of Farmer's Delight! Brought pineapples and
 You can find some wild pineapple outside, and make more of pineapple food!
 
 ### **License**
-[PineappleLICENSE](LICENSE.txt)
+[Pineapple LICENSE](LICENSE.txt)
 
 [With AFL - 3.0](LICENSE)
