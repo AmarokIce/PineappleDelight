@@ -1,7 +1,0 @@
-{
-  "type": "farmersdelight:add_features_by_filter",
-  "allowed_biomes": "#forge:is_hot/overworld",
-  "denied_biomes": "#forge:is_wet",
-  "features": "pineapple_delight:wild_pineapple",
-  "step": "vegetal_decoration"
-}

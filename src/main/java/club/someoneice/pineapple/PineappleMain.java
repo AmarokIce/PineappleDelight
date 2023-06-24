@@ -13,8 +13,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
@@ -28,7 +26,7 @@ public class PineappleMain
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         new ItemsGroup();
 
-        modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::onRenderTypeSetup);
         ItemList.ITEMS.register(modEventBus);
         BlockList.BLOCKS.register(modEventBus);
         BlockList.BLOCK_ITEMS.register(modEventBus);
@@ -41,13 +39,8 @@ public class PineappleMain
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) { }
-
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) { }
-
-    @SubscribeEvent
-    public static void onRenderTypeSetup(FMLClientSetupEvent event) {
+    public void onRenderTypeSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             ItemBlockRenderTypes.setRenderLayer(BlockList.PINEAPPLE_WILD_CROP.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(BlockList.PINEAPPLE_CROP.get(), RenderType.cutout());
