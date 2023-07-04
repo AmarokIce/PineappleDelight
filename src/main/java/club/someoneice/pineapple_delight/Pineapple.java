@@ -7,7 +7,6 @@ public class Pineapple implements ModInitializer {
     public void onInitialize() {
         new ItemInit();
         new BlockInit();
-        BlockInit.registerRenderLayer();
 
         WildPineapple.register();
     }
