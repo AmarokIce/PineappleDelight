@@ -1,7 +1,6 @@
 package club.someoneice.pineapple.init;
 
 import club.someoneice.pineapple.data.BlockUtil;
-import club.someoneice.pineapple.data.ItemsGroup;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -20,7 +19,7 @@ public class BlockList {
     public static final RegistryObject<Block> PINEAPPLE_CROP = BLOCKS.register("pineapple_crop", BlockUtil::crop);
 
 
-    public static final RegistryObject<Item> PINEAPPLE_PIE_ITEM = BLOCK_ITEMS.register("pineapple_pie", () -> new BlockItem(BlockList.PINEAPPLE_PIE.get(), new Item.Properties().tab(ItemsGroup.TAB)));
-    public static final RegistryObject<Item> PINEAPPLE_WILD_CROP_ITEM = BLOCK_ITEMS.register("pineapple_wild_crop", () -> new BlockItem(BlockList.PINEAPPLE_WILD_CROP.get(), new Item.Properties().tab(ItemsGroup.TAB)));
-    public static final RegistryObject<Item> PINEAPPLE_CROP_ITEM = BLOCK_ITEMS.register("pineapple_crop", () -> new BlockItem(BlockList.PINEAPPLE_CROP.get(), new Item.Properties().tab(ItemsGroup.TAB)));
+    public static final RegistryObject<Item> PINEAPPLE_PIE_ITEM = BLOCK_ITEMS.register("pineapple_pie", () -> new BlockItem(BlockList.PINEAPPLE_PIE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PINEAPPLE_WILD_CROP_ITEM = BLOCK_ITEMS.register("pineapple_wild_crop", () -> new BlockItem(BlockList.PINEAPPLE_WILD_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PINEAPPLE_CROP_ITEM = BLOCK_ITEMS.register("pineapple_crop", () -> new BlockItem(BlockList.PINEAPPLE_CROP.get(), new Item.Properties()));
 }

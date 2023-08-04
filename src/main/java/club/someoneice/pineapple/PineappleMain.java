@@ -4,7 +4,7 @@ import club.someoneice.pineapple.event.VanillaEvent;
 import club.someoneice.pineapple.gem.WildPineapple;
 import club.someoneice.pineapple.init.BlockList;
 import club.someoneice.pineapple.init.ItemList;
-import club.someoneice.pineapple.data.ItemsGroup;
+import club.someoneice.pineapple.init.TabInit;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -24,15 +24,15 @@ public class PineappleMain
 
     public PineappleMain() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        new ItemsGroup();
 
         modEventBus.addListener(this::onRenderTypeSetup);
         ItemList.ITEMS.register(modEventBus);
         BlockList.BLOCKS.register(modEventBus);
         BlockList.BLOCK_ITEMS.register(modEventBus);
+        TabInit.TABS.register(modEventBus);
 
-        WildPineapple.FEATURES.register(modEventBus);
-        WildPineapple.PATCHES.register(modEventBus);
+        // WildPineapple.FEATURES.register(modEventBus);
+        // WildPineapple.PATCHES.register(modEventBus);
 
         // MinecraftForge.EVENT_BUS.register(new WorldEvent());
         MinecraftForge.EVENT_BUS.register(new VanillaEvent());

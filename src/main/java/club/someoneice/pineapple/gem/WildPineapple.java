@@ -6,7 +6,6 @@ import club.someoneice.pineapple.PineappleMain;
 import club.someoneice.pineapple.init.BlockList;
 import com.google.common.collect.Lists;
 import net.minecraft.core.BlockPos;
-import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
@@ -21,6 +20,7 @@ import vectorwing.farmersdelight.common.world.WildCropGeneration;
 
 
 public class WildPineapple {
+    /*
     public static final DeferredRegister<ConfiguredFeature<?, ?>> FEATURES = DeferredRegister.create(BuiltinRegistries.CONFIGURED_FEATURE.key(), PineappleMain.MODID);
     public static final DeferredRegister<PlacedFeature> PATCHES = DeferredRegister.create(BuiltinRegistries.PLACED_FEATURE.key(), PineappleMain.MODID);
 
@@ -38,4 +38,5 @@ public class WildPineapple {
     private static PlacedFeature wildCropPatch(RegistryObject<ConfiguredFeature<?, ?>> feature, PlacementModifier... modifiers) {
         return new PlacedFeature(feature.getHolder().get(), Lists.newArrayList(modifiers));
     }
+    */
 }

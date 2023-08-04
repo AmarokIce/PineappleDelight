@@ -11,7 +11,6 @@ public class ItemUtil {
      */
     public static Item itemItems() {
         Item.Properties properties = new Item.Properties();
-        properties.tab(ItemsGroup.TAB);
         return new Item(properties);
     }
 
@@ -28,8 +27,6 @@ public class ItemUtil {
         Item.Properties properties = new Item.Properties();
         FoodProperties.Builder builder = new FoodProperties.Builder();
 
-        properties.tab(ItemsGroup.TAB);
-
         builder.nutrition(hunger);
         builder.saturationMod(saturation);
         if (wolf) builder.meat();
@@ -43,8 +40,6 @@ public class ItemUtil {
     public static Item foodDrinkItems(int hunger, float saturation, boolean alwaysEat, boolean fast) {
         Item.Properties properties = new Item.Properties();
         FoodProperties.Builder builder = new FoodProperties.Builder();
-
-        properties.tab(ItemsGroup.TAB);
 
         builder.nutrition(hunger);
         builder.saturationMod(saturation);
