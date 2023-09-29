@@ -21,7 +21,6 @@ public class BlockUtil {
     }
 
     public static Block crop() {
-        // return new CropHelper(BlockList.PINEAPPLE_CROP_ITEM.get());
         return new CropHelper();
     }
 }
