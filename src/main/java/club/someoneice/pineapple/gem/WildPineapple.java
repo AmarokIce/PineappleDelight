@@ -24,16 +24,16 @@ public class WildPineapple {
     public static final DeferredRegister<ConfiguredFeature<?, ?>> FEATURES = DeferredRegister.create(BuiltinRegistries.CONFIGURED_FEATURE.key(), PineappleMain.MODID);
     public static final DeferredRegister<PlacedFeature> PATCHES = DeferredRegister.create(BuiltinRegistries.PLACED_FEATURE.key(), PineappleMain.MODID);
 
-    public static RegistryObject<ConfiguredFeature<?, ?>> FEATURE_PATCH_WILD_PINEAPPLE = FEATURES.register("wild_pineapple",
+    public static RegistryObject<ConfiguredFeature<?, ?>> FEATURE_PATCH_WILD_PINEAPPLE = FEATURES.register("patch_wild_pineapple",
             () -> wildCropFeature(BlockList.PINEAPPLE_WILD_CROP, BlockTags.DIRT));
 
-    public static RegistryObject<PlacedFeature> PATCH_WILD_PINEAPPLE = PATCHES.register("wild_pineapple",
+    public static RegistryObject<PlacedFeature> PATCH_WILD_PINEAPPLE = PATCHES.register("patch_wild_pineapple",
             () -> wildCropPatch(FEATURE_PATCH_WILD_PINEAPPLE, RarityFilter.onAverageOnceEvery(10), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
 
     private static ConfiguredFeature<?, ?> wildCropFeature(Supplier<Block> wildCrop, TagKey<Block> blockTag) {
         return new ConfiguredFeature<>(Feature.RANDOM_PATCH, WildCropGeneration.randomPatchConfig(wildCrop.get(),
-                64, 12, BlockPredicate.matchesTag(new BlockPos(0, -1, 0), blockTag)));
+                32, 8, BlockPredicate.matchesTag(new BlockPos(0, -1, 0), blockTag)));
     }
     private static PlacedFeature wildCropPatch(RegistryObject<ConfiguredFeature<?, ?>> feature, PlacementModifier... modifiers) {
         return new PlacedFeature(feature.getHolder().get(), Lists.newArrayList(modifiers));
