@@ -19,8 +19,8 @@ public class TabInit {
             .icon(() -> new ItemStack(ItemList.PINEAPPLE.get()))
             // Add default items to tab
             .displayItems((params, output) -> {
-                ItemList.ITEMS.getEntries().forEach( it -> output.accept(it.get()) );
-                BlockList.BLOCK_ITEMS.getEntries().forEach( it -> output.accept(it.get()) );
+                ItemList.ITEMS.getEntries().forEach(it -> output.accept(it.get()));
+                BlockList.BLOCK_ITEMS.getEntries().forEach(it -> output.accept(it.get()));
             })
             .build()
     );

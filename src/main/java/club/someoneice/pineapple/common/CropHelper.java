@@ -9,6 +9,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class CropHelper extends CropBlock {
     Item seed = Items.WHEAT_SEEDS;
+
     // public CropHelper(Item seed) {
     public CropHelper() {
         super(Properties.of().noCollission().noOcclusion().sound(SoundType.CROP).randomTicks().instabreak());
