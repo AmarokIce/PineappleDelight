@@ -85,7 +85,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20-46.0.2'
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.1'
     implementation fg.deobf("curse.maven:FarmerDelight-398521:4679319")
 
     // implementation fileTree(dir: 'libs', includes: ['*.jar'])
