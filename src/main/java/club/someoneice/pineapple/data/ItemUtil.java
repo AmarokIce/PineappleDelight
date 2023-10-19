@@ -7,6 +7,7 @@ import net.minecraft.world.item.Item;
 public class ItemUtil {
     /**
      * Make a new item here.
+     *
      * @return - Item.
      */
     public static Item itemItems() {
@@ -16,11 +17,12 @@ public class ItemUtil {
 
     /**
      * Here make a new food item, use it in @ItemList.
-     * @param hunger - Nutrition.
+     *
+     * @param hunger     - Nutrition.
      * @param saturation - Saturation.
-     * @param wolf - Can feed dogs.
-     * @param alwaysEat - Can always eat.
-     * @param fast - Can fast eat.
+     * @param wolf       - Can feed dogs.
+     * @param alwaysEat  - Can always eat.
+     * @param fast       - Can fast eat.
      * @return - ItemFood.
      */
     public static Item foodItems(int hunger, float saturation, boolean wolf, boolean alwaysEat, boolean fast) {

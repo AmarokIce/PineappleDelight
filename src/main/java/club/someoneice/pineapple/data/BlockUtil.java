@@ -1,7 +1,6 @@
 package club.someoneice.pineapple.data;
 
 import club.someoneice.pineapple.common.CropHelper;
-import club.someoneice.pineapple.init.BlockList;
 import club.someoneice.pineapple.init.ItemList;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.Block;
@@ -17,7 +16,7 @@ public class BlockUtil {
     }
 
     public static Block wildBlock() {
-        return new WildCropBlock(MobEffects.SATURATION, 8,Block.Properties.of().noCollission().noOcclusion().sound(SoundType.CROP).randomTicks().instabreak());
+        return new WildCropBlock(MobEffects.SATURATION, 8, Block.Properties.of().noCollission().noOcclusion().sound(SoundType.CROP).randomTicks().instabreak());
     }
 
     public static Block crop() {
