@@ -10,10 +10,10 @@
       "item": "pineapple_delight:pineapple_side"
     },
     {
-      "tag": "forge:crops/rice"
+      "tag": "farmersdelight:rice"
     },
     {
-      "tag": "forge:eggs"
+      "tag": "c:eggs"
     },
     {
       "item": "minecraft:carrot"
