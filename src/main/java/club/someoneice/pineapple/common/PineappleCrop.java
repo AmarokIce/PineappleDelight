@@ -13,7 +13,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 import sereneseasons.api.season.Season;
 import sereneseasons.api.season.SeasonHelper;
-import sereneseasons.command.SeasonCommands;
 
 public class PineappleCrop extends CropBlock {
     Item seed = Items.WHEAT_SEEDS;
