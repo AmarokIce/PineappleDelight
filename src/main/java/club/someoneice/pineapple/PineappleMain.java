@@ -12,13 +12,17 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLLoader;
 import org.slf4j.Logger;
 
 @Mod(PineappleMain.MODID)
 public class PineappleMain {
     public static final String MODID = "pineapple_delight";
     private static final Logger LOGGER = LogUtils.getLogger();
+
+    public static Boolean SEASON_INSTALL;
 
     public PineappleMain() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -39,5 +43,10 @@ public class PineappleMain {
             ItemBlockRenderTypes.setRenderLayer(BlockList.PINEAPPLE_WILD_CROP.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(BlockList.PINEAPPLE_CROP.get(), RenderType.cutout());
         });
+    }
+
+    @SubscribeEvent
+    public static void init(FMLCommonSetupEvent event) {
+        SEASON_INSTALL = FMLLoader.getLoadingModList().getModFileById("sereneseasons") != null;
     }
 }
