@@ -1,6 +1,6 @@
 package club.someoneice.pineapple.data;
 
-import club.someoneice.pineapple.common.CropHelper;
+import club.someoneice.pineapple.common.PineappleCrop;
 import club.someoneice.pineapple.init.ItemList;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.Block;
@@ -20,6 +20,6 @@ public class BlockUtil {
     }
 
     public static Block crop() {
-        return new CropHelper();
+        return new PineappleCrop();
     }
 }
