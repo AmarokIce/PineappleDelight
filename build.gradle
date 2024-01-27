@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.11-SNAPSHOT'
+	id 'fabric-loom' version '0.12-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -11,6 +11,16 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
+	exclusiveContent {
+		forRepository {
+			maven {
+				url "https://cursemaven.com"
+			}
+		}
+		filter {
+			includeGroup "curse.maven"
+		}
+	}
 }
 
 dependencies {
@@ -19,7 +29,8 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	implementation fileTree(dir: 'mods', includes: ['*.jar'])
+	modImplementation "curse.maven:FarmerDelight-482834:4939709"
+	modImplementation "curse.maven:Season-413523:4699698"
 }
 
 processResources {
@@ -44,6 +55,7 @@ jar {
 	}
 }
 
+// configure the maven publication
 publishing {
 	publications {
 		mavenJava(MavenPublication) {
@@ -51,6 +63,7 @@ publishing {
 		}
 	}
 
+	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
 	}
 }

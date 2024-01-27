@@ -15,7 +15,6 @@
     }
   ],
   "tool": {
-    "type": "farmersdelight:tool",
-    "tag": "fabric:tools/knives"
+    "tag": "farmersdelight:tools/knives"
   }
 }

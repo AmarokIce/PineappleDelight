@@ -1,0 +1,14 @@
+{
+  "itemGroup.pineapple": "Pineapple Delight",
+  "item.pineapple_delight.pineapple": "Ananas",
+  "item.pineapple_delight.pineapple_side": "Kawałek Ananasa",
+  "item.pineapple_delight.pineapple_pie_side": "Kawałek Ciasta Ananasowego",
+  "item.pineapple_delight.pineapple_juice": "Sok Ananasowy",
+  "item.pineapple_delight.pineapple_fried_rice": "Smażony Ryż z Ananasem",
+  "item.pineapple_delight.pineapple_milk_shake": "Milkshake Ananasowy",
+  "item.pineapple_delight.pineapple_ice_cream": "Lody Ananasowe",
+
+  "block.pineapple_delight.pineapple_pie": "Ciasto Ananasowe",
+  "block.pineapple_delight.pineapple_wild_crop": "Dziki Ananas",
+  "block.pineapple_delight.pineapple_crop": "Roślina Ananasa"
+}
