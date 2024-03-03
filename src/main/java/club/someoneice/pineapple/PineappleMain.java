@@ -22,7 +22,7 @@ public class PineappleMain {
     public static final String MODID = "pineapple_delight";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public static Boolean SEASON_INSTALL;
+    public static boolean SEASON_INSTALL;
 
     public PineappleMain() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
