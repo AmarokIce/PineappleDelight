@@ -24,7 +24,12 @@ public class PineappleCrop extends CropBlock {
     }
 
     public void randomTick(BlockState state, ServerLevel world, BlockPos pos, RandomSource random) {
-        if (!PineappleMain.SEASON_INSTALL) super.randomTick(state, world, pos, random);
+        if (!PineappleMain.SEASON_INSTALL) {
+            super.randomTick(state, world, pos, random);
+
+            return;
+        }
+
         Season season = SeasonHelper.getSeasonState(world).getSeason();
         if (season != Season.SPRING && season != Season.SUMMER) return;
         int age = this.getAge(state);
