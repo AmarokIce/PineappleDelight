@@ -22,7 +22,7 @@ public class PineappleMain {
     public static final String MODID = "pineapple_delight";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public static boolean SEASON_INSTALL;
+    public static boolean SEASON_INSTALL = false;
 
     public PineappleMain() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -35,6 +35,7 @@ public class PineappleMain {
         MinecraftForge.EVENT_BUS.register(new VanillaEvent());
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::onRenderTypeSetup);
+        modEventBus.addListener(this::init);
     }
 
     @SubscribeEvent
@@ -46,7 +47,7 @@ public class PineappleMain {
     }
 
     @SubscribeEvent
-    public static void init(FMLCommonSetupEvent event) {
+    public void init(FMLCommonSetupEvent event) {
         SEASON_INSTALL = FMLLoader.getLoadingModList().getModFileById("sereneseasons") != null;
     }
 }

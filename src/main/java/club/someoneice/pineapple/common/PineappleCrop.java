@@ -17,16 +17,13 @@ import sereneseasons.api.season.SeasonHelper;
 public class PineappleCrop extends CropBlock {
     Item seed = Items.WHEAT_SEEDS;
 
-    // public PineappleCrop(Item seed) {
     public PineappleCrop() {
         super(Properties.of().noCollission().noOcclusion().sound(SoundType.CROP).randomTicks().instabreak());
-        // this.seed = seed;
     }
 
     public void randomTick(BlockState state, ServerLevel world, BlockPos pos, RandomSource random) {
         if (!PineappleMain.SEASON_INSTALL) {
             super.randomTick(state, world, pos, random);
-
             return;
         }
 
