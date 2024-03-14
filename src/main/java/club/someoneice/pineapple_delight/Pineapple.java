@@ -9,8 +9,8 @@ public class Pineapple implements ModInitializer {
     @Override
     public void onInitialize() {
         SEASON_INSTALL = FabricLoader.getInstance().isModLoaded("seasons");
-
         new ItemInit();
         new BlockInit();
+        new FeatureInit();
     }
 }

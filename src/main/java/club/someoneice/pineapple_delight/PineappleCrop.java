@@ -3,10 +3,13 @@ package club.someoneice.pineapple_delight;
 import io.github.lucaargolo.seasons.FabricSeasons;
 import io.github.lucaargolo.seasons.utils.Season;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.CropBlock;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
+import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 
 public class PineappleCrop extends CropBlock {
     public PineappleCrop() {
@@ -14,8 +17,16 @@ public class PineappleCrop extends CropBlock {
     }
 
     @Override
+    public boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
+        return floor.isOf(Blocks.FARMLAND) || floor.isOf(Blocks.SAND);
+    }
+
+    @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        if (!Pineapple.SEASON_INSTALL) super.randomTick(state, world, pos, random);
+        if (!Pineapple.SEASON_INSTALL){
+            super.randomTick(state, world, pos, random);
+            return;
+        }
 
         Season season = FabricSeasons.getCurrentSeason(world);
         if (season != Season.SPRING && season != Season.SUMMER) return;
