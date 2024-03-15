@@ -21,7 +21,9 @@
     "main": [
       "club.someoneice.pineapple_delight.Pineapple"
     ],
-    "client": []
+    "client": [
+      "club.someoneice.pineapple_delight.PineappleClient"
+    ]
   },
   "mixins": [],
 

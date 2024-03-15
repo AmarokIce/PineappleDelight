@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.BiomeTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
@@ -14,7 +15,7 @@ public class FeatureInit {
     public static final RegistryKey<ConfiguredFeature<?, ?>> WILD_PINEAPPLE_CONFIGURED = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier("pineapple_delight", "pineapple_wild_crop"));
     public static RegistryKey<PlacedFeature> WILD_PINEAPPLE_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("pineapple_delight", "pineapple_wild_crop"));
 
-    static {
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DESERT), GenerationStep.Feature.VEGETAL_DECORATION, WILD_PINEAPPLE_PLACED);
+    public static void boot() {
+        BiomeModifications.addFeature(BiomeSelectors.excludeByKey(BiomeKeys.DESERT, BiomeKeys.JUNGLE, BiomeKeys.BAMBOO_JUNGLE, BiomeKeys.SPARSE_JUNGLE), GenerationStep.Feature.VEGETAL_DECORATION, WILD_PINEAPPLE_PLACED);
     }
 }

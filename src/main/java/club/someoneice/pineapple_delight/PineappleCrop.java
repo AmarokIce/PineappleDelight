@@ -5,6 +5,7 @@ import io.github.lucaargolo.seasons.utils.Season;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.CropBlock;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
@@ -13,12 +14,12 @@ import net.minecraft.world.World;
 
 public class PineappleCrop extends CropBlock {
     public PineappleCrop() {
-        super(Settings.create().noCollision().nonOpaque().ticksRandomly());
+        super(Settings.copy(Blocks.WHEAT));
     }
 
     @Override
     public boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return floor.isOf(Blocks.FARMLAND) || floor.isOf(Blocks.SAND);
+        return floor.isIn(BlockTags.DIRT) || floor.isOf(Blocks.SAND) || floor.isOf(Blocks.FARMLAND);
     }
 
     @Override
