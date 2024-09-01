@@ -1,0 +1,14 @@
+{
+  "itemGroup.pineapple": "Pineapple Delight",
+  "item.pineapple_delight.pineapple": "パイナップル",
+  "item.pineapple_delight.pineapple_side": "スライスしたパイナップル",
+  "item.pineapple_delight.pineapple_pie_side": "切り分けたパイナップルパイ",
+  "item.pineapple_delight.pineapple_juice": "パイナップルジュース",
+  "item.pineapple_delight.pineapple_fried_rice": "パイナップルチャーハン",
+  "item.pineapple_delight.pineapple_milk_shake": "パイナップルミルクセーキ",
+  "item.pineapple_delight.pineapple_ice_cream": "パイナップルアイスクリーム",
+
+  "block.pineapple_delight.pineapple_pie": "パイナップルパイ",
+  "block.pineapple_delight.pineapple_wild_crop": "野生のパイナップルの苗",
+  "block.pineapple_delight.pineapple_crop": "パイナップルの苗"
+}

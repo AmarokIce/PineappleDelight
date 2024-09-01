@@ -1,0 +1,15 @@
+{
+  "itemGroup.pineapple": "鳳梨樂事",
+
+  "item.pineapple_delight.pineapple": "鳳梨",
+  "item.pineapple_delight.pineapple_side": "鳳梨片",
+  "item.pineapple_delight.pineapple_pie_side": "鳳梨派切片",
+  "item.pineapple_delight.pineapple_juice": "鳳梨果汁",
+  "item.pineapple_delight.pineapple_fried_rice": "鳳梨炒飯",
+  "item.pineapple_delight.pineapple_milk_shake": "鳳梨奶昔",
+  "item.pineapple_delight.pineapple_ice_cream": "鳳梨冰淇淋",
+
+  "block.pineapple_delight.pineapple_pie": "鳳梨派",
+  "block.pineapple_delight.pineapple_wild_crop": "野鳳梨",
+  "block.pineapple_delight.pineapple_crop": "鳳梨苗"
+}

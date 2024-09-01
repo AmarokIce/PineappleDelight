@@ -1,0 +1,11 @@
+{
+  "parent": "farmersdelight:block/pie_slice2",
+  "render_type": "cutout",
+  "textures": {
+    "particle": "pineapple_delight:block/pineapple_pie_top",
+    "bottom": "pineapple_delight:block/pie_bottom",
+    "inner": "pineapple_delight:block/pineapple_pie_inner",
+    "side": "pineapple_delight:block/pie_side",
+    "top": "pineapple_delight:block/pineapple_pie_top"
+  }
+}
