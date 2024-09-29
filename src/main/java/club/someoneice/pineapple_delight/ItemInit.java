@@ -39,18 +39,18 @@ public class ItemInit {
         return registry(new Item(new Item.Settings().food(builder.build())), name);
     }
 
+    private static Item registry(Item item, String name) {
+        Registry.register(Registries.ITEM, new Identifier("pineapple_delight", name), item);
+        ITEMS.add(item);
+        return item;
+    }
+    
     private static Item itemFoodDrink(String name, StatusEffect ... effects) {
         var builder = new FoodComponent.Builder();
         builder.hunger(5).saturationModifier((float) 0.5);
         if (false) builder.snack();
         if (false) builder.alwaysEdible();
         return registry(new ItemDrink(new Item.Settings().food(builder.build())).setReturnItem(Items.GLASS_BOTTLE).setEffect(effects), name);
-    }
-
-    private static Item registry(Item item, String name) {
-        Registry.register(Registries.ITEM, new Identifier("pineapple_delight", name), item);
-        ITEMS.add(item);
-        return item;
     }
 
     private static class ItemDrink extends Item {
