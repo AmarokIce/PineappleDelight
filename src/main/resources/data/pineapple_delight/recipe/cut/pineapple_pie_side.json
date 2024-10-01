@@ -7,11 +7,13 @@
   ],
   "result": [
     {
-      "item": "pineapple_delight:pineapple_pie_side",
-      "count": 4
+      "item": {
+        "id": "pineapple_delight:pineapple_pie_side",
+        "count": 4
+      }
     }
   ],
   "tool": {
-    "tag": "forge:tools/knives"
+    "tag": "c:tools/knife"
   }
 }

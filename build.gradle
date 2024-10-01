@@ -80,12 +80,22 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+
+    maven {
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
+
 }
 
 dependencies {
     implementation "curse.maven:farmers-delight-398521:5566383"
     implementation "curse.maven:serene-seasons-291874:5661346"
     implementation "curse.maven:glitchcore-955399:5660740"
+
+    compileOnly("mezz.jei:jei-1.21.1-common-api:19.9.0.122")
+    compileOnly("mezz.jei:jei-1.21.1-neoforge-api:19.9.0.122")
+    runtimeOnly("mezz.jei:jei-1.21.1-neoforge:19.9.0.122")
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

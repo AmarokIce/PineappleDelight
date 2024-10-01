@@ -1,9 +1,9 @@
 {
   "type": "farmersdelight:cooking",
   "container": {
-    "item": "minecraft:glass_bottle"
+    "count": 1,
+    "id": "minecraft:glass_bottle"
   },
-  "cookingtime": 200,
   "experience": 1.0,
   "ingredients": [
     {
@@ -13,17 +13,18 @@
       "item": "pineapple_delight:pineapple_side"
     },
     {
-      "tag": "forge:milk"
+      "tag": "c:foods/milk"
     },
     {
       "item": "minecraft:sugar"
     },
     {
-      "item": "minecraft:snowball"
+      "item": "minecraft:sugar"
     }
   ],
   "recipe_book_tab": "drinks",
   "result": {
-    "item": "pineapple_delight:pineapple_ice_cream"
+    "count": 1,
+    "id": "pineapple_delight:pineapple_milk_shake"
   }
 }

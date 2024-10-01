@@ -1,19 +1,19 @@
 {
   "type": "farmersdelight:cooking",
   "container": {
-    "item": "pineapple_delight:pineapple"
+    "count": 1,
+    "id": "pineapple_delight:pineapple"
   },
-  "cookingtime": 200,
   "experience": 1.0,
   "ingredients": [
     {
       "item": "pineapple_delight:pineapple_side"
     },
     {
-      "tag": "forge:crops/rice"
+      "tag": "c:crops/rice"
     },
     {
-      "tag": "forge:eggs"
+      "tag": "c:eggs"
     },
     {
       "item": "minecraft:carrot"
@@ -21,6 +21,7 @@
   ],
   "recipe_book_tab": "misc",
   "result": {
-    "item": "pineapple_delight:pineapple_fried_rice"
+    "count": 1,
+    "id": "pineapple_delight:pineapple_fried_rice"
   }
 }

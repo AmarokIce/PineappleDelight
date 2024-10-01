@@ -14,7 +14,7 @@ public class TabInit {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PINEAPPLE_TAB = TABS.register(MODID, () -> CreativeModeTab.builder()
             // Set name of tab to display
-            .title(Component.translatable("item_group." + MODID))
+            .title(Component.translatable("itemGroup.pineapple_delight"))
             // Set icon of creative tab
             .icon(() -> new ItemStack(ItemList.PINEAPPLE.get()))
             // Add default items to tab
