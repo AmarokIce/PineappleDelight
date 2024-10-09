@@ -1,0 +1,14 @@
+{
+  "itemGroup.pineapple_delight": "Pineapple Delight",
+  "item.pineapple_delight.pineapple": "파인애플",
+  "item.pineapple_delight.pineapple_side": "파인애플 조각",
+  "item.pineapple_delight.pineapple_pie_side": "파인애플 파이 조각",
+  "item.pineapple_delight.pineapple_juice": "파인애플 주스",
+  "item.pineapple_delight.pineapple_fried_rice": "파인애플 볶음밥",
+  "item.pineapple_delight.pineapple_milk_shake": "파인애플 밀크셰이크",
+  "item.pineapple_delight.pineapple_ice_cream": "파인애플 아이스크림",
+
+  "block.pineapple_delight.pineapple_pie": "파인애플 파이",
+  "block.pineapple_delight.pineapple_wild_crop": "야생 파인애플 작물",
+  "block.pineapple_delight.pineapple_crop": "파인애플 작물"
+}
