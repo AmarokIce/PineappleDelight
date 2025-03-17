@@ -31,7 +31,8 @@
     "fabricloader": ">=0.13.3",
     "fabric": "*",
     "minecraft": ">=1.21",
-    "java": ">=17"
+    "java": ">=21",
+    "farmersdelight": "*"
   },
   "suggests": {
     "another-mod": "*"

@@ -1,8 +1,6 @@
 package club.someoneice.pineapple_delight;
 
 
-import com.mojang.serialization.MapCodec;
-import com.mojang.serialization.codecs.SimpleMapCodec;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
