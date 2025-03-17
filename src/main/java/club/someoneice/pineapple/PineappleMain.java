@@ -6,21 +6,22 @@ import club.someoneice.pineapple.init.TabInit;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.loading.FMLLoader;
+import net.neoforged.neoforge.common.ModConfigSpec;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 
 @Mod(PineappleMain.MODID)
 public class PineappleMain {
     public static final String MODID = "pineapple_delight";
     private static final Logger LOGGER = LoggerFactory.getLogger(MODID);
-
 
     public static boolean SEASON_INSTALL = false;
 
@@ -43,5 +44,13 @@ public class PineappleMain {
 
     public void init(FMLCommonSetupEvent event) {
         SEASON_INSTALL = FMLLoader.getLoadingModList().getModFileById("sereneseasons") != null;
+
+        ComposterBlock.COMPOSTABLES.put(BlockList.PINEAPPLE_CROP.get(), 0.65f);
+
+        ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE.get(), 0.85f);
+        ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE_SIDE.get(), 0.85f);
+        ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE_PIE_SIDE.get(), 0.85f);
+
+        ComposterBlock.COMPOSTABLES.put(BlockList.PINEAPPLE_PIE_ITEM.get(), 1.0f);
     }
 }

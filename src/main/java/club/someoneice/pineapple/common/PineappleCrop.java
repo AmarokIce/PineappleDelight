@@ -1,6 +1,7 @@
 package club.someoneice.pineapple.common;
 
 import club.someoneice.pineapple.PineappleMain;
+import club.someoneice.pineapple.init.BlockList;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
@@ -15,8 +16,6 @@ import sereneseasons.api.season.Season;
 import sereneseasons.api.season.SeasonHelper;
 
 public class PineappleCrop extends CropBlock {
-    Item seed = Items.WHEAT_SEEDS;
-
     public PineappleCrop() {
         super(Properties.of().noCollission().noOcclusion().sound(SoundType.CROP).randomTicks().instabreak());
     }
@@ -36,6 +35,6 @@ public class PineappleCrop extends CropBlock {
 
     @Override
     protected @NotNull ItemLike getBaseSeedId() {
-        return seed;
+        return BlockList.PINEAPPLE_CROP_ITEM.get();
     }
 }

@@ -1,0 +1,14 @@
+{
+  "itemGroup.pineapple": "Pineapple Delight",
+  "item.pineapple_delight.pineapple": "Piña",
+  "item.pineapple_delight.pineapple_side": "Rodaja de Piña",
+  "item.pineapple_delight.pineapple_pie_side": "Trozo de Pastel de Piña",
+  "item.pineapple_delight.pineapple_juice": "Zumo de Piña",
+  "item.pineapple_delight.pineapple_fried_rice": "Arroz Frito con Piña",
+  "item.pineapple_delight.pineapple_milk_shake": "Batido de Piña",
+  "item.pineapple_delight.pineapple_ice_cream": "Helado de Piña",
+
+  "block.pineapple_delight.pineapple_pie": "Pastel de Piña",
+  "block.pineapple_delight.pineapple_wild_crop": "Piña Silvestre",
+  "block.pineapple_delight.pineapple_crop": "Planta de Piña"
+}

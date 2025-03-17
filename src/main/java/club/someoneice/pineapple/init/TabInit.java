@@ -13,11 +13,8 @@ public class TabInit {
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PINEAPPLE_TAB = TABS.register(MODID, () -> CreativeModeTab.builder()
-            // Set name of tab to display
             .title(Component.translatable("itemGroup.pineapple_delight"))
-            // Set icon of creative tab
             .icon(() -> new ItemStack(ItemList.PINEAPPLE.get()))
-            // Add default items to tab
             .displayItems((params, output) -> {
                 ItemList.ITEMS.getEntries().forEach(it -> output.accept(it.get()));
                 BlockList.BLOCK_ITEMS.getEntries().forEach(it -> output.accept(it.get()));
