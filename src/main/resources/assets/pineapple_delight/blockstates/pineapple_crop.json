@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "pineapple_delight:block/pineapple_crop_0" },
+    "age=1": { "model": "pineapple_delight:block/pineapple_crop_0" },
+    "age=2": { "model": "pineapple_delight:block/pineapple_crop_1" },
+    "age=3": { "model": "pineapple_delight:block/pineapple_crop_1" },
+    "age=4": { "model": "pineapple_delight:block/pineapple_crop_1" },
+    "age=5": { "model": "pineapple_delight:block/pineapple_crop_2" },
+    "age=6": { "model": "pineapple_delight:block/pineapple_crop_2" },
+    "age=7": { "model": "pineapple_delight:block/pineapple_crop_3" }
+  }
+}

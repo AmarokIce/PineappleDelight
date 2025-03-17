@@ -1,0 +1,39 @@
+package club.someoneice.pineapple_delight;
+
+
+import com.mojang.serialization.MapCodec;
+import com.mojang.serialization.codecs.SimpleMapCodec;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.block.*;
+import net.minecraft.client.render.RenderLayer;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+import vectorwing.farmersdelight.common.block.PieBlock;
+import vectorwing.farmersdelight.common.registry.ModBlocks;
+
+public class BlockInit {
+    public static final Block PINEAPPLE_PIE = registry(new PieBlock(AbstractBlock.Settings.copy(ModBlocks.APPLE_PIE.get()), () -> ItemInit.PINEAPPLE_PIE_SIDE), "pineapple_pie");
+    public static final Block PINEAPPLE_WILD_CROP = registry(new WildPineappleCrop(AbstractBlock.Settings.copy(Blocks.WHEAT)), "pineapple_wild_crop");
+    public static final Block PINEAPPLE_CROP = registry(new PineappleCrop(), "pineapple_crop");
+    public static final Block PINEAPPLE_CRATE_BLOCK = registry(new Block(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)), "pineapple_crate");
+
+    private static Block registry(Block block, String name) {
+        Registry.register(Registries.BLOCK, Identifier.of("pineapple_delight", name), block);
+        var item = new BlockItem(block, new Item.Settings());
+        Registry.register(Registries.ITEM, Identifier.of("pineapple_delight", name), item);
+
+        ItemInit.ITEMS.add(item);
+        return block;
+    }
+
+    @Environment(EnvType.CLIENT)
+    public static void registerRenderLayer() {
+        BlockRenderLayerMap.INSTANCE.putBlock(PINEAPPLE_WILD_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(PINEAPPLE_CROP, RenderLayer.getCutout());
+    }
+}

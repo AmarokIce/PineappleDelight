@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "pineapple_delight",
+  "version": "${version}",
+
+  "name": "Pineapple Delight",
+  "description": "Let's eating pineapple!",
+  "authors": [
+    "Someoneice"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "Pineapple",
+  "icon": "assets/pineapple_delight/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "club.someoneice.pineapple_delight.Pineapple"
+    ],
+    "client": [
+      "club.someoneice.pineapple_delight.PineappleClient"
+    ]
+  },
+  "mixins": [],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": ">=1.21",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
