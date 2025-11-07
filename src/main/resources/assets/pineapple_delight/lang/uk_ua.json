@@ -1,5 +1,5 @@
 {
-  "itemGroup.pineapple": "Pineapple Delight",
+  "itemGroup.pineapple_delight": "Pineapple Delight",
   "item.pineapple_delight.pineapple": "Ананас",
   "item.pineapple_delight.pineapple_side": "Скибка ананаса",
   "item.pineapple_delight.pineapple_pie_side": "Шматок ананасового пирога",
@@ -7,7 +7,6 @@
   "item.pineapple_delight.pineapple_fried_rice": "Смажений рис із ананасом",
   "item.pineapple_delight.pineapple_milk_shake": "Ананасовий молочний коктейль",
   "item.pineapple_delight.pineapple_ice_cream": "Ананасове морозиво",
-
   "block.pineapple_delight.pineapple_pie": "Ананасовий пиріг",
   "block.pineapple_delight.pineapple_wild_crop": "Дикий ананас",
   "block.pineapple_delight.pineapple_crop": "Паросток ананаса"

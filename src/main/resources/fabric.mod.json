@@ -19,10 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "club.someoneice.pineapple_delight.Pineapple"
+      "club.someoneice.pineapple_delight.ModMainCore"
     ],
     "client": [
-      "club.someoneice.pineapple_delight.PineappleClient"
+      "club.someoneice.pineapple_delight.ModMainClient"
     ]
   },
   "mixins": [],
@@ -30,7 +30,7 @@
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",
-    "minecraft": "*",
+    "minecraft": "1.20.1",
     "java": ">=17"
   },
   "suggests": {

@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "pineapple_delight:block/pineapple_crate" }
+    "": {
+      "model": "pineapple_delight:block/pineapple_crate"
+    }
   }
 }

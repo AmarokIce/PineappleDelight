@@ -1,14 +1,20 @@
 {
-  "itemGroup.pineapple": "Pineapple Delight",
+  "itemGroup.pineapple_delight": "Pineapple Delight",
   "item.pineapple_delight.pineapple": "Pineapple",
+  "item.pineapple_delight.golden_pineapple": "Golden Pineapple",
   "item.pineapple_delight.pineapple_side": "Pineapple Sides",
   "item.pineapple_delight.pineapple_pie_side": "Slice of Pineapple Pie",
+  "item.pineapple_delight.pineapple_cake_slice": "Slice of Pineapple Cake",
   "item.pineapple_delight.pineapple_juice": "Pineapple Juice",
   "item.pineapple_delight.pineapple_fried_rice": "Pineapple Fried Rice",
   "item.pineapple_delight.pineapple_milk_shake": "Pineapple Milkshake",
   "item.pineapple_delight.pineapple_ice_cream": "Pineapple Ice-cream",
-
+  "item.pineapple_delight.pineapple_mace_hand": "Pineapple Mace Hand",
+  "item.pineapple_delight.pineapple_old": "Ancient pineapple",
   "block.pineapple_delight.pineapple_pie": "Pineapple Pie",
+  "block.pineapple_delight.pineapple_cake": "Pineapple Cake",
   "block.pineapple_delight.pineapple_wild_crop": "Wild Pineapple Crop",
-  "block.pineapple_delight.pineapple_crop": "Pineapple Crop"
+  "block.pineapple_delight.pineapple_crop": "Pineapple Crop",
+  "block.pineapple_delight.huge_pineapple": "Huge Pineapple",
+  "block.pineapple_delight.pineapple_crate": "Crate Pineapple"
 }
