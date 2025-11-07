@@ -2,22 +2,29 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
-    "xwx"
+    "ouo",
+    "xwx",
+    "mmm"
   ],
   "key": {
     "w": {
-      "item": "farmersdelight:pie_crust"
+      "item": "minecraft:egg"
     },
-    "a": {
+    "o": {
       "tag": "c:pineapples"
+    },
+    "u": {
+      "tag": "c:foods/milk"
     },
     "x": {
       "item": "minecraft:sugar"
+    },
+    "m": {
+      "item": "minecraft:wheat"
     }
   },
   "result": {
     "count": 1,
-    "id": "pineapple_delight:pineapple_pie"
+    "id": "pineapple_delight:pineapple_cake"
   }
 }
