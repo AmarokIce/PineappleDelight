@@ -10,15 +10,17 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import static club.someoneice.pineapple.PineappleMain.MODID;
 
 public class TabInit {
-    public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+  public static final DeferredRegister<CreativeModeTab> TABS =
+      DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PINEAPPLE_TAB = TABS.register(MODID, () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.pineapple_delight"))
-            .icon(() -> new ItemStack(ItemList.PINEAPPLE.get()))
-            .displayItems((params, output) -> {
-                ItemList.ITEMS.getEntries().forEach(it -> output.accept(it.get()));
-                BlockList.BLOCK_ITEMS.getEntries().forEach(it -> output.accept(it.get()));
-            })
-            .build()
-    );
+  public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PINEAPPLE_TAB =
+      TABS.register(MODID, () -> CreativeModeTab.builder()
+      .title(Component.translatable("itemGroup.pineapple_delight"))
+      .icon(() -> new ItemStack(ItemList.PINEAPPLE.get()))
+      .displayItems((params, output) -> {
+        ItemList.ITEMS.getEntries().forEach(it -> output.accept(it.get()));
+        BlockList.BLOCK_ITEMS.getEntries().forEach(it -> output.accept(it.get()));
+      })
+      .build()
+  );
 }
