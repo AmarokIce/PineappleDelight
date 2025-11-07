@@ -25,14 +25,14 @@ repositories {
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 
-	mappings "net.fabricmc:yarn:1.21.1+build.3"
-	// mappings loom.officialMojangMappings()
+	// mappings "net.fabricmc:yarn:1.21.1+build.3"
+	mappings loom.officialMojangMappings()
 
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "curse.maven:farmers-delight-refabricated-993166:5935233"
+	modImplementation "curse.maven:farmers-delight-refabricated-993166:6955339"
 	modImplementation "maven.modrinth:fabric-seasons:2.4.2-BETA+1.21"
 }
 

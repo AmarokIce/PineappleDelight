@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ouo",
+    "xwx",
+    "mmm"
+  ],
+  "key": {
+    "w": {
+      "item": "minecraft:egg"
+    },
+    "o": {
+      "tag": "c:pineapples"
+    },
+    "u": {
+      "tag": "c:foods/milk"
+    },
+    "x": {
+      "item": "minecraft:sugar"
+    },
+    "m": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "pineapple_delight:pineapple_cake"
+  }
+}
