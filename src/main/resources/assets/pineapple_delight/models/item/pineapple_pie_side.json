@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pineapple_delight:item/pineapple_pie_side"
+  }
+}
