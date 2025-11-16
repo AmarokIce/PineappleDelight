@@ -14,7 +14,7 @@
       "tag": "c:pineapples"
     },
     "u": {
-      "tag": "c:foods/milk"
+      "tag": "c:milks"
     },
     "x": {
       "item": "minecraft:sugar"
@@ -25,6 +25,6 @@
   },
   "result": {
     "count": 1,
-    "id": "pineapple_delight:pineapple_cake"
+    "item": "pineapple_delight:pineapple_cake"
   }
 }

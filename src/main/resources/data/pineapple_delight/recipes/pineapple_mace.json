@@ -10,11 +10,11 @@
       "item": "pineapple_delight:huge_pineapple"
     },
     "x": {
-      "tag": "c:sticks"
+      "item": "minecraft:stick"
     }
   },
   "result": {
     "count": 1,
-    "id": "pineapple_delight:pineapple_mace_hand"
+    "item": "pineapple_delight:pineapple_mace"
   }
 }

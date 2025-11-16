@@ -7,13 +7,11 @@
   ],
   "result": [
     {
-      "item": {
-        "id": "pineapple_delight:pineapple_cake_slice",
-        "count": 4
-      }
+      "item": "pineapple_delight:pineapple_cake_slice",
+      "count": 4
     }
   ],
   "tool": {
-    "tag": "c:tools/knife"
+    "tag": "c:tools/knives"
   }
 }

@@ -40,8 +40,8 @@ public class InitItems {
       registry(new ItemOldPineapple(), "pineapple_old");
   public static final Item GOLDEN_PINEAPPLE =
       registry(new ItemPineappleGolden(), "golden_pineapple");
-  public static final Item PINEAPPLE_MACE_HAND =
-      registry(new ItemPineappleMaceHand(), "pineapple_mace_hand");
+  public static final Item PINEAPPLE_MACE =
+      registry(new ItemPineappleMaceHand(), "pineapple_mace");
 
   private static Item itemFoodBase(String name, int hunger, float saturation,
                                    boolean alwaysEat) {
