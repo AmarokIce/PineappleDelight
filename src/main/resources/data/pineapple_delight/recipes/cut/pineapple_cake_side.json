@@ -7,10 +7,8 @@
   ],
   "result": [
     {
-      "item": {
-        "item": "pineapple_delight:pineapple_cake_slice",
-        "count": 4
-      }
+      "item": "pineapple_delight:pineapple_cake_slice",
+      "count": 4
     }
   ],
   "tool": {
