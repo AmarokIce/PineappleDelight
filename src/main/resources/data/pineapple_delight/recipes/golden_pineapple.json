@@ -8,14 +8,14 @@
   ],
   "key": {
     "g": {
-      "tag": "c:gold_ingots"
+      "item": "minecraft:gold_ingot"
     },
     "p": {
-      "tag": "pineapple_delight:pineapple"
+      "item": "pineapple_delight:pineapple"
     }
   },
   "result": {
     "count": 1,
-    "id": "pineapple_delight:golden_pineapple"
+    "item": "pineapple_delight:golden_pineapple"
   }
 }

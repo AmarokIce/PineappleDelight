@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ppp",
+    "ppp",
+    "ppp"
+  ],
+  "key": {
+    "p": {
+      "item": "pineapple_delight:pineapple"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "pineapple_delight:pineapple_crate"
+  }
+}
