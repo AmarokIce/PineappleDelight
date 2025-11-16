@@ -26,7 +26,7 @@ public class ItemUtil {
     if (fireResistant) properties.fireResistant();
 
     properties.food(builder.build());
-    return isDrink ? new Item(properties) : new ItemDrinkable(properties);
+    return !isDrink ? new Item(properties) : new ItemDrinkable(properties);
   }
 
   public static Item foodItems(int hunger, float saturation, boolean alwaysEat,
