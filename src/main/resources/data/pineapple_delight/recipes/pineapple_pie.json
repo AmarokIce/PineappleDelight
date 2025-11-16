@@ -1,22 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     "aaa",
-    "xOx"
+    "xwx"
   ],
-
   "key": {
-    "O": {
+    "w": {
       "item": "farmersdelight:pie_crust"
     },
     "a": {
-      "item": "pineapple_delight:pineapple_side"
+      "tag": "c:pineapples"
     },
     "x": {
       "item": "minecraft:sugar"
     }
   },
   "result": {
+    "count": 1,
     "item": "pineapple_delight:pineapple_pie"
   }
 }
