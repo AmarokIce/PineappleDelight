@@ -34,15 +34,11 @@ public class ItemDrinkable extends Item {
       serverPlayer.awardStat(Stats.ITEM_USED.get(this));
     }
 
-    if (itemStack.isEmpty()) {
-      return new ItemStack(Items.GLASS_BOTTLE);
-    } else {
-      if (entityLiving instanceof Player player && !player.getAbilities().instabuild) {
-        if (!player.getInventory().add(new ItemStack(Items.GLASS_BOTTLE))) {
-          player.drop(new ItemStack(Items.GLASS_BOTTLE), false);
-        }
+    if (entityLiving instanceof Player player && !player.getAbilities().instabuild) {
+      if (!player.getInventory().add(new ItemStack(Items.GLASS_BOTTLE))) {
+        player.drop(new ItemStack(Items.GLASS_BOTTLE), false);
       }
-      return itemStack;
     }
+    return itemStack;
   }
 }
