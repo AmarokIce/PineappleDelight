@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
-version = '1.1.0-1.20.1-Forge'
+version = '1.1.0-1.20.1-forge-fix'
 group = 'club.someoneice.pineapple_delight'
 archivesBaseName = 'PineappleDelight'
 
@@ -83,6 +83,19 @@ repositories {
         content {
             includeGroup "curse.maven"
         }
+    }
+
+    maven {
+        name = "Progwml6's maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
+    maven {
+        name = "ModMaven"
+        url = "https://modmaven.dev"
     }
 }
 

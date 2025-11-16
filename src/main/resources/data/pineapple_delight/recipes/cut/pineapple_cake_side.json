@@ -2,13 +2,13 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "pineapple_delight:pineapple_pie"
+      "item": "pineapple_delight:pineapple_cake"
     }
   ],
   "result": [
     {
       "item": {
-        "id": "pineapple_delight:pineapple_pie_side",
+        "item": "pineapple_delight:pineapple_cake_slice",
         "count": 4
       }
     }

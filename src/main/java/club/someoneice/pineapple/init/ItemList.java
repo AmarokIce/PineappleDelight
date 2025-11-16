@@ -41,8 +41,8 @@ public final class ItemList {
           ItemUtil.foodItems(3, 0.4f, false, true));
   public static final RegistryObject<Item> PINEAPPLE_OLD =
       ITEMS.register("pineapple_old", ItemOldPineapple::new);
-  public static final RegistryObject<Item> PINEAPPLE_MACE_HAND =
-      ITEMS.register("pineapple_mace_hand", ItemPineappleMaceHand::new);
+  public static final RegistryObject<Item> PINEAPPLE_MACE =
+      ITEMS.register("pineapple_mace", ItemPineappleMaceHand::new);
   public static final RegistryObject<Item> GOLDEN_PINEAPPLE =
       ITEMS.register("golden_pineapple", ItemPineappleGolden::new);
 }
