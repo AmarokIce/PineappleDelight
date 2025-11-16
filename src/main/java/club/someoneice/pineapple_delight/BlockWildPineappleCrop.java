@@ -1,10 +1,10 @@
 package club.someoneice.pineapple_delight;
 
 import com.mojang.serialization.MapCodec;
-import net.minecraft.world.level.block.BaseCoralPlantBlock;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.BushBlock;
 
-public class BlockWildPineappleCrop extends BaseCoralPlantBlock {
+public class BlockWildPineappleCrop extends BushBlock {
   public BlockWildPineappleCrop(Properties settings) {
     super(settings);
   }
@@ -14,7 +14,7 @@ public class BlockWildPineappleCrop extends BaseCoralPlantBlock {
   }
 
   @Override
-  public MapCodec<BaseCoralPlantBlock> codec() {
+  protected MapCodec<? extends BushBlock> codec() {
     return simpleCodec(BlockWildPineappleCrop::new);
   }
 }

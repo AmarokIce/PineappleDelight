@@ -8,10 +8,10 @@
   ],
   "key": {
     "g": {
-      "tag": "c:gold_ingots"
+      "tag": "c:ingots/gold"
     },
     "p": {
-      "tag": "pineapple_delight:pineapple"
+      "item": "pineapple_delight:pineapple"
     }
   },
   "result": {
