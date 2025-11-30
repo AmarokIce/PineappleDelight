@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[*,)"
 license="Pineapple"
 
 [[mods]]
@@ -16,6 +16,6 @@ Add Pineapple to Minecraft!
 [[dependencies.pineapple_delight]]
 modId="farmersdelight"
 mandatory=true
-versionRange="[*,)"
+versionRange="[1.18.2,)"
 ordering="NONE"
 side="BOTH"
