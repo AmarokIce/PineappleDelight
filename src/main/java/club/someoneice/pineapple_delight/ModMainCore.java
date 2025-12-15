@@ -12,7 +12,6 @@ import net.minecraft.world.level.block.ComposterBlock;
 public class ModMainCore implements ModInitializer {
   public static final String ID = "pineapple_delight";
 
-
   public static boolean SEASON_INSTALL;
 
   @Override
@@ -24,20 +23,20 @@ public class ModMainCore implements ModInitializer {
 
     var itemGroup = FabricItemGroup.builder().icon(InitItems.PINEAPPLE::getDefaultInstance)
         .title(Component.translatable("itemGroup.pineapple_delight"))
-        .displayItems((displayContext, entries) ->
-            InitItems.ITEMS.forEach(entries::accept))
+        .displayItems((displayContext, entries) -> InitItems.ITEMS.forEach(entries::accept))
         .build();
 
     Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
-        ResourceLocation.fromNamespaceAndPath("pineapple_delight", "pineapple_tab"),
-        itemGroup);
+        ResourceLocation.fromNamespaceAndPath("pineapple_delight", "pineapple_tab"), itemGroup);
 
-    ComposterBlock.COMPOSTABLES.put(InitBlocks.PINEAPPLE_CROP, 0.65f);
+    ComposterBlock.COMPOSTABLES.put(InitBlocks.PINEAPPLE_CROP.asItem(), 0.65f);
     ComposterBlock.COMPOSTABLES.put(InitItems.PINEAPPLE_SIDE, 0.65f);
 
-    ComposterBlock.COMPOSTABLES.put(InitItems.PINEAPPLE, 0.85f);
-    ComposterBlock.COMPOSTABLES.put(InitItems.PINEAPPLE_PIE_SIDE, 0.85f);
+    ComposterBlock.COMPOSTABLES.put(InitItems.PINEAPPLE, 0.65f);
+    ComposterBlock.COMPOSTABLES.put(InitItems.PINEAPPLE_SIDE, 0.2f);
+    ComposterBlock.COMPOSTABLES.put(InitItems.PINEAPPLE_PIE_SIDE, 0.55f);
 
-    ComposterBlock.COMPOSTABLES.put(InitBlocks.PINEAPPLE_PIE, 1.0f);
+    ComposterBlock.COMPOSTABLES.put(InitBlocks.PINEAPPLE_PIE.asItem(), 1.0f);
+    ComposterBlock.COMPOSTABLES.put(InitBlocks.PINEAPPLE_CAKE.asItem(), 1.0f);
   }
 }
