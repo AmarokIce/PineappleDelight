@@ -43,12 +43,14 @@ public class PineappleMain {
   public void init(FMLCommonSetupEvent event) {
     SEASON_INSTALL = FMLLoader.getLoadingModList().getModFileById("sereneseasons") != null;
 
-    ComposterBlock.COMPOSTABLES.put(BlockList.PINEAPPLE_CROP.get(), 0.65f);
+    ComposterBlock.COMPOSTABLES.put(BlockList.PINEAPPLE_CROP_ITEM.get(), 0.65f);
 
-    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE.get(), 0.85f);
-    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE_SIDE.get(), 0.85f);
-    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE_PIE_SIDE.get(), 0.85f);
+    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE.get(), 0.65f);
+    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE_SIDE.get(), 0.2f);
+    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE_PIE_SIDE.get(), 0.65f);
+    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE_CAKE_SLICE.get(), 0.3f);
 
     ComposterBlock.COMPOSTABLES.put(BlockList.PINEAPPLE_PIE_ITEM.get(), 1.0f);
+    ComposterBlock.COMPOSTABLES.put(BlockList.PINEAPPLE_CAKE_ITEM.get(), 1.0f);
   }
 }
