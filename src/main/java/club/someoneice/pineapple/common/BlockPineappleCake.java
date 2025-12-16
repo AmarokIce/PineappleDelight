@@ -1,18 +1,50 @@
 package club.someoneice.pineapple.common;
 
+import club.someoneice.pineapple.init.ItemList;
 import net.minecraft.core.BlockPos;
 import net.minecraft.stats.Stats;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CakeBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.phys.BlockHitResult;
+import vectorwing.farmersdelight.common.tag.ModTags;
 
 public final class BlockPineappleCake extends CakeBlock {
   public BlockPineappleCake() {
     super(Properties.copy(Blocks.CAKE));
+  }
+
+  @Override
+  public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player,
+                               InteractionHand hand, BlockHitResult hit) {
+    int i = state.getValue(BITES);
+
+    if (!player.getMainHandItem().is(ModTags.KNIVES)) {
+      return super.use(state, world, pos, player, hand, hit);
+    }
+
+    if (i < 6) {
+      world.setBlock(pos, state.setValue(BITES, i + 1), 3);
+    } else {
+      world.removeBlock(pos, false);
+      world.gameEvent(player, GameEvent.BLOCK_DESTROY, pos);
+    }
+
+    final var cake = new ItemStack(ItemList.PINEAPPLE_CAKE_SLICE.get());
+
+    if (!player.addItem(cake)) {
+      world.addFreshEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), cake));
+    }
+
+    return InteractionResult.SUCCESS;
   }
 
   public static InteractionResult eat(LevelAccessor level, BlockPos pos, BlockState state,

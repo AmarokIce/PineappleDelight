@@ -16,10 +16,8 @@ public final class ItemOldPineapple extends Item {
         .food(new FoodProperties.Builder()
             .nutrition(10)
             .saturationMod(2.0f)
-            .effect(() -> new MobEffectInstance(
-                MobEffects.REGENERATION, 100, 1), 1.0F)
-            .effect(() -> new MobEffectInstance(
-                MobEffects.ABSORPTION, 2400, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 1), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 2400, 0), 1.0F)
             .alwaysEat()
             .build()
     ));

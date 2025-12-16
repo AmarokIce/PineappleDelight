@@ -22,13 +22,15 @@ public class ItemDrinkable extends Item {
 
   @Nonnull
   @Override
-  public UseAnim getUseAnimation(ItemStack itemStack) {
+  public UseAnim getUseAnimation(final ItemStack itemStack) {
     return UseAnim.DRINK;
   }
 
   @Nonnull
   @Override
-  public ItemStack finishUsingItem(ItemStack itemStack, Level world, LivingEntity entityLiving) {
+  public ItemStack finishUsingItem(final ItemStack itemStack,
+                                   final Level world,
+                                   final LivingEntity entityLiving) {
     super.finishUsingItem(itemStack, world, entityLiving);
     if (entityLiving instanceof ServerPlayer serverPlayer) {
       CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, itemStack);
@@ -37,13 +39,14 @@ public class ItemDrinkable extends Item {
 
     if (itemStack.isEmpty()) {
       return new ItemStack(Items.GLASS_BOTTLE);
-    } else {
-      if (entityLiving instanceof Player player && !player.getAbilities().instabuild) {
-        if (!player.getInventory().add(new ItemStack(Items.GLASS_BOTTLE))) {
-          player.drop(new ItemStack(Items.GLASS_BOTTLE), false);
-        }
-      }
-      return itemStack;
     }
+
+    if (entityLiving instanceof Player player
+        && !player.getAbilities().instabuild
+        && !player.getInventory().add(new ItemStack(Items.GLASS_BOTTLE))
+    ) {
+      player.drop(new ItemStack(Items.GLASS_BOTTLE), false);
+    }
+    return itemStack;
   }
 }

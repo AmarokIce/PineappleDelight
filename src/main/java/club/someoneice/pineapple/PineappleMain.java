@@ -1,5 +1,8 @@
 package club.someoneice.pineapple;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import club.someoneice.pineapple.init.BlockList;
 import club.someoneice.pineapple.init.ItemList;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -13,8 +16,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLLoader;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @Mod(PineappleMain.MODID)
 public class PineappleMain {
@@ -52,12 +53,13 @@ public class PineappleMain {
   public void init(FMLCommonSetupEvent event) {
     SEASON_INSTALL = FMLLoader.getLoadingModList().getModFileById("sereneseasons") != null;
 
-    ComposterBlock.COMPOSTABLES.put(BlockList.PINEAPPLE_CROP.get(), 0.65f);
+    ComposterBlock.COMPOSTABLES.put(BlockList.PINEAPPLE_CROP_ITEM.get(), 0.1f);
 
-    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE.get(), 0.85f);
-    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE_SIDE.get(), 0.85f);
-    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE_PIE_SIDE.get(), 0.85f);
+    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE.get(), 0.65f);
+    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE_SIDE.get(), 0.2f);
+    ComposterBlock.COMPOSTABLES.put(ItemList.PINEAPPLE_PIE_SIDE.get(), 0.25f);
 
     ComposterBlock.COMPOSTABLES.put(BlockList.PINEAPPLE_PIE_ITEM.get(), 1.0f);
+    ComposterBlock.COMPOSTABLES.put(BlockList.PINEAPPLE_CAKE_ITEM.get(), 1.0f);
   }
 }

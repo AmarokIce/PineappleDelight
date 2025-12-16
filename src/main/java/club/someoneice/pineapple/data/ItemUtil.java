@@ -28,7 +28,7 @@ public class ItemUtil {
 
     properties.food(builder.build());
     properties.tab(PineappleMain.PINEAPPLE_TAB);
-    return isDrink ? new Item(properties) : new ItemDrinkable(properties);
+    return isDrink ? new ItemDrinkable(properties) : new Item(properties);
   }
 
   public static Item foodItems(int hunger, float saturation, boolean alwaysEat,
