@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ggg",
+    "gpg",
+    "ggg"
+  ],
+  "key": {
+    "g": {
+      "item": "minecraft:gold_ingot"
+    },
+    "p": {
+      "item": "pineapple_delight:pineapple"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "pineapple_delight:golden_pineapple"
+  }
+}

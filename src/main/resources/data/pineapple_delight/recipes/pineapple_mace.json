@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "o",
+    "x"
+  ],
+  "key": {
+    "o": {
+      "item": "pineapple_delight:huge_pineapple"
+    },
+    "x": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "pineapple_delight:pineapple_mace"
+  }
+}

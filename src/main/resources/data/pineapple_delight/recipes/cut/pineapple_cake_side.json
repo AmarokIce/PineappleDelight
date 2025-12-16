@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "pineapple_delight:pineapple_cake"
+    }
+  ],
+  "result": [
+    {
+      "item": "pineapple_delight:pineapple_cake_slice",
+      "count": 7
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  }
+}
