@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
-version = '1.1.1-1.20.1-forge'
+version = '1.1.1-1.20.1-forge-2'
 group = 'club.someoneice.pineapple_delight'
 archivesBaseName = 'PineappleDelight'
 
@@ -104,7 +104,9 @@ dependencies {
     implementation fg.deobf("curse.maven:FarmerDelight-398521:4679319")
     implementation fg.deobf("curse.maven:serene-seasons-291874:4761603")
 
-    // implementation fileTree(dir: 'libs', includes: ['*.jar'])
+    implementation fg.deobf("curse.maven:immersive-engineering-231951:6206989")
+
+    implementation fg.deobf(fileTree(dir: 'libs', includes: ['*.jar']))
 }
 
 jar {

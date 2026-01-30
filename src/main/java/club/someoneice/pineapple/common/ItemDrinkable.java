@@ -4,7 +4,6 @@ import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -27,22 +26,31 @@ public class ItemDrinkable extends Item {
 
   @Nonnull
   @Override
-  public ItemStack finishUsingItem(ItemStack itemStack, Level world, LivingEntity entityLiving) {
+  public ItemStack finishUsingItem(final ItemStack itemStack,
+                                   final Level world,
+                                   final LivingEntity entityLiving) {
     super.finishUsingItem(itemStack, world, entityLiving);
-    if (entityLiving instanceof ServerPlayer serverPlayer) {
-      CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, itemStack);
-      serverPlayer.awardStat(Stats.ITEM_USED.get(this));
-    }
-
-    if (itemStack.isEmpty()) {
-      return new ItemStack(Items.GLASS_BOTTLE);
-    } else {
-      if (entityLiving instanceof Player player && !player.getAbilities().instabuild) {
-        if (!player.getInventory().add(new ItemStack(Items.GLASS_BOTTLE))) {
-          player.drop(new ItemStack(Items.GLASS_BOTTLE), false);
-        }
-      }
+    if (!(entityLiving instanceof ServerPlayer serverPlayer)) {
       return itemStack;
     }
+
+    CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, itemStack);
+    serverPlayer.awardStat(Stats.ITEM_USED.get(this));
+
+    final ItemStack glassBottle = new ItemStack(Items.GLASS_BOTTLE);
+
+    if (itemStack.isEmpty()) {
+      return glassBottle;
+    }
+
+    if (serverPlayer.isCreative()) {
+      return itemStack;
+    }
+
+    if (!serverPlayer.getInventory().add(glassBottle)) {
+      serverPlayer.drop(glassBottle, false);
+    }
+
+    return itemStack;
   }
 }

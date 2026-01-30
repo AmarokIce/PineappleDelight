@@ -1,12 +1,14 @@
 package club.someoneice.pineapple.init;
 
 import club.someoneice.pineapple.common.BlockPineappleCake;
+import club.someoneice.pineapple.common.BlockPineappleCandleCake;
 import club.someoneice.pineapple.common.BlockPineappleCrop;
 import club.someoneice.pineapple.data.BlockUtil;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -31,6 +33,58 @@ public final class BlockList {
       BLOCKS.register("pineapple_crop", BlockPineappleCrop::new);
   public static final RegistryObject<Block> HUGE_PINEAPPLE =
       BLOCKS.register("huge_pineapple", BlockUtil::pineappleHuge);
+
+  public static final RegistryObject<Block> CANDLE_CAKE =
+      BLOCKS.register("pineapple_cake_with_candle",
+          () -> new BlockPineappleCandleCake(Blocks.CANDLE));
+  public static final RegistryObject<Block> WHITE_CANDLE_CAKE =
+      BLOCKS.register("pineapple_cake_with_white_candle",
+          () -> new BlockPineappleCandleCake(Blocks.WHITE_CANDLE));
+  public static final RegistryObject<Block> ORANGE_CANDLE_CAKE =
+      BLOCKS.register("pineapple_cake_with_orange_candle",
+          () -> new BlockPineappleCandleCake(Blocks.ORANGE_CANDLE));
+  public static final RegistryObject<Block> MAGENTA_CANDLE_CAKE =
+      BLOCKS.register("pineapple_cake_with_magenta_candle",
+          () -> new BlockPineappleCandleCake(Blocks.MAGENTA_CANDLE));
+  public static final RegistryObject<Block> LIGHT_BLUE_CANDLE_CAKE =
+      BLOCKS.register("pineapple_cake_with_light_blue_candle",
+          () -> new  BlockPineappleCandleCake(Blocks.LIGHT_BLUE_CANDLE));
+  public static final RegistryObject<Block> YELLOW_CANDLE_CAKE
+      = BLOCKS.register("pineapple_cake_with_yellow_candle",
+        () -> new BlockPineappleCandleCake(Blocks.YELLOW_CANDLE));
+  public static final RegistryObject<Block> LIME_CANDLE_CAKE
+      = BLOCKS.register("pineapple_cake_with_lime_candle",
+        () -> new BlockPineappleCandleCake(Blocks.LIME_CANDLE));
+  public static final RegistryObject<Block> PINK_CANDLE_CAKE
+      = BLOCKS.register("pineapple_cake_with_pink_candle",
+        () -> new BlockPineappleCandleCake(Blocks.PINK_CANDLE));
+  public static final RegistryObject<Block> GRAY_CANDLE_CAKE
+      = BLOCKS.register("pineapple_cake_with_gray_candle",
+        () -> new BlockPineappleCandleCake(Blocks.GRAY_CANDLE));
+  public static final RegistryObject<Block> LIGHT_GRAY_CANDLE_CAKE
+      = BLOCKS.register("pineapple_cake_with_light_gray_candle",
+        () -> new BlockPineappleCandleCake(Blocks.LIGHT_GRAY_CANDLE));
+  public static final RegistryObject<Block> CYAN_CANDLE_CAKE
+      = BLOCKS.register("pineapple_cake_with_cyan_candle",
+        () -> new BlockPineappleCandleCake(Blocks.CYAN_CANDLE));
+  public static final RegistryObject<Block> PURPLE_CANDLE_CAKE
+      = BLOCKS.register("pineapple_cake_with_purple_candle",
+        () -> new BlockPineappleCandleCake(Blocks.PURPLE_CANDLE));
+  public static final RegistryObject<Block> BLUE_CANDLE_CAKE
+      = BLOCKS.register("pineapple_cake_with_blue_candle",
+        () -> new BlockPineappleCandleCake(Blocks.BLUE_CANDLE));
+  public static final RegistryObject<Block> BROWN_CANDLE_CAKE
+      = BLOCKS.register("pineapple_cake_with_brown_candle",
+        () -> new BlockPineappleCandleCake(Blocks.BROWN_CANDLE));
+  public static final RegistryObject<Block> GREEN_CANDLE_CAKE
+      = BLOCKS.register("pineapple_cake_with_green_candle",
+        () -> new BlockPineappleCandleCake(Blocks.GREEN_CANDLE));
+  public static final RegistryObject<Block> RED_CANDLE_CAKE
+      = BLOCKS.register("pineapple_cake_with_red_candle",
+        () -> new BlockPineappleCandleCake(Blocks.RED_CANDLE));
+  public static final RegistryObject<Block> BLACK_CANDLE_CAKE
+      = BLOCKS.register("pineapple_cake_with_black_candle",
+        () -> new BlockPineappleCandleCake(Blocks.BLACK_CANDLE));
 
   public static final RegistryObject<Item> PINEAPPLE_PIE_ITEM =
       BLOCK_ITEMS.register("pineapple_pie", () ->
