@@ -1,0 +1,20 @@
+{
+  "itemGroup.pineapple_delight": "Pineapple Delight",
+  "item.pineapple_delight.pineapple": "Ананас",
+  "item.pineapple_delight.golden_pineapple": "Золотой ананас",
+  "item.pineapple_delight.pineapple_side": "Долька ананаса",
+  "item.pineapple_delight.pineapple_pie_side": "Кусок ананасового пирога",
+  "item.pineapple_delight.pineapple_cake_slice": "Кусок ананасового торта",
+  "item.pineapple_delight.pineapple_juice": "Ананасовый сок",
+  "item.pineapple_delight.pineapple_fried_rice": "Жареный рис с ананасом",
+  "item.pineapple_delight.pineapple_milk_shake": "Ананасовый милкшейк",
+  "item.pineapple_delight.pineapple_ice_cream": "Ананасовое мороженое",
+  "item.pineapple_delight.pineapple_mace": "Булавананас",
+  "item.pineapple_delight.pineapple_old": "Древний ананас",
+  "block.pineapple_delight.pineapple_pie": "Ананасовый пирог",
+  "block.pineapple_delight.pineapple_cake": "Ананасовый торнт",
+  "block.pineapple_delight.pineapple_wild_crop": "Дикий росток ананаса",
+  "block.pineapple_delight.pineapple_crop": "Росток ананаса",
+  "block.pineapple_delight.huge_pineapple": "Огромный ананас",
+  "block.pineapple_delight.pineapple_crate": "Ящик с ананасами"
+}
