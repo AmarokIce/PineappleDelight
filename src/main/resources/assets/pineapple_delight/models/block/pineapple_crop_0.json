@@ -4,7 +4,8 @@
 	"parent": "customcrops:crops/stage_0",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "pineapple_delight:block/pineapple_crop_0"
+		"1": "pineapple_delight:block/pineapple_crop_0",
+		"particle": "pineapple_delight:block/pineapple_crop_0"
 	},
 	"elements": [
 		{

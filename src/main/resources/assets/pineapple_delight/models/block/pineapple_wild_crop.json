@@ -4,7 +4,8 @@
 	"parent": "block/crop",
 	"render_type": "cutout",
 	"textures": {
-		"2": "pineapple_delight:block/wild_pineapple"
+		"2": "pineapple_delight:block/wild_pineapple",
+		"particle": "pineapple_delight:block/wild_pineapple"
 	},
 	"elements": [
 		{

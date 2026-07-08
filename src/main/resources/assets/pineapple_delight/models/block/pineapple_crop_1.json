@@ -3,7 +3,8 @@
 	"credit": "momirealms",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "pineapple_delight:block/pineapple_crop_1"
+		"1": "pineapple_delight:block/pineapple_crop_1",
+		"particle": "pineapple_delight:block/pineapple_crop_1"
 	},
 	"elements": [
 		{
