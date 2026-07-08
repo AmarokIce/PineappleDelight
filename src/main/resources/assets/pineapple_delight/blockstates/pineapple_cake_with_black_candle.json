@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "pineapple_delight:block/pineapple_cake_with_black_candle"
+    },
+    "lit=true": {
+      "model": "pineapple_delight:block/pineapple_cake_with_black_candle_lit"
+    }
+  }
+}

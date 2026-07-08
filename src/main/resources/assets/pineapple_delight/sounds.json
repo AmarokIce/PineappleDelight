@@ -1,0 +1,10 @@
+{
+  "happy_birthday": {
+    "sounds": [
+      {
+        "name": "pineapple_delight:happy_birthday",
+        "stream": true
+      }
+    ]
+  }
+}
