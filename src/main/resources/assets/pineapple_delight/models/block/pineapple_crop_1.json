@@ -7,7 +7,7 @@
   ],
   "textures": {
     "1": "pineapple_delight:block/pineapple_crop_1",
-    "particle": "customcrops:crops/pineapple/stage_1"
+    "particle": "pineapple_delight:crops/pineapple/stage_1"
   },
   "elements": [
     {
