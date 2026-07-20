@@ -16,7 +16,7 @@
       "tag": "c:eggs"
     },
     {
-      "item": "minecraft:carrot"
+      "tag": "c:crops/carrot"
     }
   ],
   "recipe_book_tab": "misc",
