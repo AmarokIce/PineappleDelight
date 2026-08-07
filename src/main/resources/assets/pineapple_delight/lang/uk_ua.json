@@ -1,13 +1,20 @@
 {
   "itemGroup.pineapple_delight": "Pineapple Delight",
   "item.pineapple_delight.pineapple": "Ананас",
-  "item.pineapple_delight.pineapple_side": "Скибка ананаса",
+  "item.pineapple_delight.golden_pineapple": "Золотий ананас",
+  "item.pineapple_delight.pineapple_side": "Скибки ананаса",
   "item.pineapple_delight.pineapple_pie_side": "Шматок ананасового пирога",
+  "item.pineapple_delight.pineapple_cake_slice": "Шматок ананасового торта",
   "item.pineapple_delight.pineapple_juice": "Ананасовий сік",
   "item.pineapple_delight.pineapple_fried_rice": "Смажений рис із ананасом",
   "item.pineapple_delight.pineapple_milk_shake": "Ананасовий молочний коктейль",
   "item.pineapple_delight.pineapple_ice_cream": "Ананасове морозиво",
+  "item.pineapple_delight.pineapple_mace": "Ананасова булава",
+  "item.pineapple_delight.pineapple_old": "Стародавній ананас",
   "block.pineapple_delight.pineapple_pie": "Ананасовий пиріг",
+  "block.pineapple_delight.pineapple_cake": "Ананасовий торт",
   "block.pineapple_delight.pineapple_wild_crop": "Дикий ананас",
-  "block.pineapple_delight.pineapple_crop": "Паросток ананаса"
+  "block.pineapple_delight.pineapple_crop": "Паросток ананаса",
+  "block.pineapple_delight.huge_pineapple": "Величезний ананас",
+  "block.pineapple_delight.pineapple_crate": "Ящик з ананасами"
 }
