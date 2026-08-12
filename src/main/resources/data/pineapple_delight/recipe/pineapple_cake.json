@@ -2,25 +2,25 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "ouo",
-    "xwx",
-    "mmm"
+    "OUO",
+    "XWX",
+    "MMM"
   ],
   "key": {
-    "w": {
-      "item": "minecraft:egg"
-    },
-    "o": {
+    "O": {
       "tag": "c:pineapples"
     },
-    "u": {
-      "tag": "c:foods/milk"
+    "U": {
+      "tag": "c:drinks/milk"
     },
-    "x": {
+    "X": {
       "item": "minecraft:sugar"
     },
-    "m": {
-      "item": "minecraft:wheat"
+    "W": {
+      "tag": "c:eggs"
+    },
+    "M": {
+      "tag": "c:crops/wheat"
     }
   },
   "result": {

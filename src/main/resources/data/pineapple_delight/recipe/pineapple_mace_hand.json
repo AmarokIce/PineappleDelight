@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "o",
-    "x"
+    "O",
+    "X"
   ],
   "key": {
-    "o": {
+    "O": {
       "item": "pineapple_delight:huge_pineapple"
     },
-    "x": {
-      "item": "minecraft:stick"
+    "X": {
+      "tag": "c:rods/wooden"
     }
   },
   "result": {
