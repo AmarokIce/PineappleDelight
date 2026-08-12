@@ -11,7 +11,7 @@
       "item": "minecraft:egg"
     },
     "o": {
-      "tag": "c:pineapples"
+      "tag": "forge:pineapples"
     },
     "u": {
       "tag": "forge:milk"

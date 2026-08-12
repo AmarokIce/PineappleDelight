@@ -1,188 +1,45 @@
 {
-  "format_version": "1.21.6",
-  "credit": "Made with Blockbench",
-  "parent": "customcrops:crops/stage_0",
-  "texture_size": [
-    32,
-    16
-  ],
-  "textures": {
-    "1": "pineapple_delight:block/pineapple_crop_0",
-    "particle": "customcrops:crops/pineapple/stage_0"
-  },
-  "elements": [
-    {
-      "from": [
-        0,
-        -1,
-        8
-      ],
-      "to": [
-        16,
-        15,
-        8
-      ],
-      "rotation": {
-        "angle": 45,
-        "axis": "y",
-        "origin": [
-          8,
-          7,
-          8
-        ]
-      },
-      "faces": {
-        "north": {
-          "uv": [
-            0,
-            0,
-            8,
-            16
-          ],
-          "texture": "#1"
-        },
-        "east": {
-          "uv": [
-            0,
-            0,
-            0,
-            16
-          ],
-          "texture": "#1"
-        },
-        "south": {
-          "uv": [
-            0,
-            0,
-            8,
-            16
-          ],
-          "texture": "#1"
-        },
-        "west": {
-          "uv": [
-            0,
-            0,
-            0,
-            16
-          ],
-          "texture": "#1"
-        },
-        "up": {
-          "uv": [
-            0,
-            0,
-            16,
-            0
-          ],
-          "texture": "#1"
-        },
-        "down": {
-          "uv": [
-            0,
-            0,
-            16,
-            0
-          ],
-          "texture": "#1"
-        }
-      }
-    },
-    {
-      "from": [
-        0,
-        -1,
-        8
-      ],
-      "to": [
-        16,
-        15,
-        8
-      ],
-      "rotation": {
-        "angle": -45,
-        "axis": "y",
-        "origin": [
-          8,
-          7,
-          8
-        ]
-      },
-      "faces": {
-        "north": {
-          "uv": [
-            0,
-            0,
-            8,
-            16
-          ],
-          "texture": "#1"
-        },
-        "east": {
-          "uv": [
-            0,
-            0,
-            0,
-            16
-          ],
-          "texture": "#1"
-        },
-        "south": {
-          "uv": [
-            0,
-            0,
-            8,
-            16
-          ],
-          "texture": "#1"
-        },
-        "west": {
-          "uv": [
-            0,
-            0,
-            0,
-            16
-          ],
-          "texture": "#1"
-        },
-        "up": {
-          "uv": [
-            0,
-            0,
-            16,
-            0
-          ],
-          "texture": "#1"
-        },
-        "down": {
-          "uv": [
-            0,
-            0,
-            16,
-            0
-          ],
-          "texture": "#1"
-        }
-      }
-    }
-  ],
-  "display": {
-    "fixed": {
-      "rotation": [
-        -90,
-        0,
-        0
-      ],
-      "translation": [
-        0,
-        0,
-        -16
-      ],
-      "scale": [
-        2,
-        2,
-        2
-      ]
-    }
-  }
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "customcrops:crops/stage_0",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "pineapple_delight:block/pineapple_crop_0",
+		"particle": "pineapple_delight:block/pineapple_crop_0"
+	},
+	"elements": [
+		{
+			"from": [0, -1, 8],
+			"to": [16, 15, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 7, 8]},
+			"faces": {
+				"north": {"uv": [8, 0, 0, 8], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 8], "texture": "#1"},
+				"south": {"uv": [0, 0, 8, 8], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 8], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [0, -1, 8],
+			"to": [16, 15, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 7, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 8], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 8], "texture": "#1"},
+				"south": {"uv": [8, 0, 0, 8], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 8], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -16],
+			"scale": [2, 2, 2]
+		}
+	}
 }

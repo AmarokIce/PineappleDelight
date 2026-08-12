@@ -1,0 +1,19 @@
+{
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "pineapple_delight:pineapple_crop"
+  },
+  "render": {
+    "type": "generic",
+    "block": "pineapple_delight:pineapple_crop"
+  },
+  "results": [
+    {
+      "item": "pineapple_delight:pineapple"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 560
+}
