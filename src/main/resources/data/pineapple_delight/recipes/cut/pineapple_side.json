@@ -15,6 +15,6 @@
     }
   ],
   "tool": {
-    "tag": "c:tools/knives"
+    "tag": "forge:tools/knives"
   }
 }

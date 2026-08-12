@@ -2,19 +2,29 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "pineapple_delight:pineapple_crate",
-      "rolls": 1,
+      "rolls": 1.0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "pineapple_delight:pineapple_crate"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "pineapple_delight:pineapple_crate"
+                }
+              ],
+              "name": "pineapple_delight:pineapple_crate"
+            }
+          ]
         }
       ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
     }
   ]
 }

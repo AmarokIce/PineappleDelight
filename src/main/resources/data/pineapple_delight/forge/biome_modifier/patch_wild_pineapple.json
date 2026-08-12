@@ -1,9 +1,0 @@
-{
-  "type": "farmersdelight:add_features_by_filter",
-  "allowed_biomes": "#minecraft:is_overworld",
-  "denied_biomes": ["#forge:is_wet"],
-  "min_temperature": 0.7,
-  "max_temperature": 1.9,
-  "features": "pineapple_delight:patch_wild_pineapple",
-  "step": "vegetal_decoration"
-}
