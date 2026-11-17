@@ -89,7 +89,7 @@ repositories {
 }
 
 dependencies {
-    implementation "curse.maven:farmers-delight-398521:5566383"
+    implementation "curse.maven:farmers-delight-398521:8765184"
     implementation "curse.maven:serene-seasons-291874:5661346"
     implementation "curse.maven:glitchcore-955399:5660740"
 

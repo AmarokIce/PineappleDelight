@@ -1,5 +1,5 @@
 {
-  "parent": "farmersdelight:block/pie",
+  "parent": "farmersdelight:block/template_pie",
   "render_type": "cutout",
   "textures": {
     "particle": "pineapple_delight:block/pineapple_pie_top",
