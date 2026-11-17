@@ -10,7 +10,7 @@
       "item": "farmersdelight:pie_crust"
     },
     "a": {
-      "item": "pineapple_delight:pineapple_side"
+      "tag": "c:pineapples"
     },
     "x": {
       "item": "minecraft:sugar"
