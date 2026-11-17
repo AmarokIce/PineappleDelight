@@ -1,14 +1,21 @@
 {
   "itemGroup.pineapple_delight": "Pineapple Delight",
   "item.pineapple_delight.pineapple": "パイナップル",
+  "item.pineapple_delight.golden_pineapple": "ゴールデンパイナップル",
   "item.pineapple_delight.pineapple_side": "スライスしたパイナップル",
   "item.pineapple_delight.pineapple_pie_side": "切り分けたパイナップルパイ",
+  "item.pineapple_delight.pineapple_cake_slice": "切り分けたパイナップルケーキ",
   "item.pineapple_delight.pineapple_juice": "パイナップルジュース",
   "item.pineapple_delight.pineapple_fried_rice": "パイナップルチャーハン",
   "item.pineapple_delight.pineapple_milk_shake": "パイナップルミルクセーキ",
   "item.pineapple_delight.pineapple_ice_cream": "パイナップルアイスクリーム",
+  "item.pineapple_delight.pineapple_mace": "パイナップルのメイス",
+  "item.pineapple_delight.pineapple_old": "太古のパイナップル",
   "block.pineapple_delight.pineapple_crate": "パイナップル入り木箱",
   "block.pineapple_delight.pineapple_pie": "パイナップルパイ",
+  "block.pineapple_delight.pineapple_cake": "パイナップルケーキ",
   "block.pineapple_delight.pineapple_wild_crop": "野生のパイナップルの苗",
-  "block.pineapple_delight.pineapple_crop": "パイナップルの苗"
+  "block.pineapple_delight.pineapple_crop": "パイナップルの苗",
+  "block.pineapple_delight.huge_pineapple": "巨大パイナップル",
+  "item.pineapple_delight.pineapple_crate": "パイナップル入り木箱"
 }
